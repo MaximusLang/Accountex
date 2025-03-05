@@ -14,7 +14,7 @@ public class Profile {
 	}
 	
 	//Creates account object and adjoining file, and adds to list of accounts
-	public void createAccount(String Uname, String Uemail, int Uphone, String Upassword) {
+	public void createAccount(String Uname, String Uemail, long Uphone, String Upassword) {
 		Account acc = new Account(Uname, Uemail, Uphone, Upassword);
 		acc.createAccountFile();
 		list.addAccount(acc);
@@ -30,7 +30,7 @@ public class Profile {
 			writer.close();
 			System.out.println("password written to file");
 		} catch (IOException e) {
-			System.out.println("you got problems bru");
+			System.out.println("Error with File Creation and/or Writing");
 			e.printStackTrace();
 		}
 	}
