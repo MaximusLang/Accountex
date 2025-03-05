@@ -7,13 +7,13 @@ public class Account {
 	//Account Info
 	public String name;
 	public String email;
-	public int phone;
+	public long phone;
 	private String password;
 	public Date DateCreated;
 	File file;
 	
 	//Constructor
-	public Account(String Uname, String Uemail, int Uphone, String Upassword) {
+	public Account(String Uname, String Uemail, long Uphone, String Upassword) {
 		name = Uname;
 		email = Uemail;
 		phone = Uphone;
